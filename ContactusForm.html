@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+    <head>
+    <style>
+        body {
+            text-align: center;
+        }
+      ul {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        overflow: hidden;
+        background-color: peru;
+      }
+
+      li {
+        float: left;
+      }
+
+      li a {
+        display:block;
+        color: darkred;
+        text-align: center;
+        padding: 15px 20px;
+        text-decoration: none;
+      }
+
+      li a:hover {
+        background-color: lightyellow;
+      }
+
+
+        </style>
+    </head>
+  <body style="background-color:slategray;">
+    <ul>
+        <li><a class="active" href="index.html">Home</a></li>
+        <li><a href="Aboutus.html">About</a></li>
+        <li><a href="ContactusForm.html">Contact</a></li>
+      </ul>
+  
+    <br><h2>Contact us to submit your query</h2></br>
+      
+    <form action="QueryAction.html">
+      
+      Email : <input type="text"  id="Email" name="Email"  placeholder="abc@gmail.com"><br/><br>
+      
+      Query : <textarea rows="5" cols="60" name="description" placeholder="write your query here...."></textarea>
+    
+      
+      <br />
+
+      <input type="submit" value="Submit" />
+    </form>
+    
+    <p>
+      If you click the "Submit" button, the form-data will be sent to us.
+      
+    </p>
+    
+  </body>
+</html>
