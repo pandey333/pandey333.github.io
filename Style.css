@@ -21,3 +21,26 @@ li a {
 li a:hover {
   background-color: lightyellow;
 }
+
+button {
+  border:darkred;
+  color:black;
+  padding: 5px 10px;
+  text-align: center;
+  text-decoration-color:green;
+  display:inline;
+  font-size:20px;
+  margin:0%;
+  cursor:pointer;
+  border: solid darkgray 5px;
+  border-radius: 10px;
+}
+
+button:hover {
+  background-color: green;
+}
+
+.style1 {
+  display: flex;
+  
+}
