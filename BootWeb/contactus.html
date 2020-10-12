@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        button {
+            border: solid darkcyan 5px;
+            background-color: cyan;
+            padding: 10px;
+            align-self: center;
+        }
+    </style>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+<script>
+function validateForm() {
+    let fName = document.getElementById('fName').value,
+        lName = document.getElementById('lName').value,
+        email = document.getElementById('email').value,
+        query = document.getElementById('query').value;
+
+        if(fName === "")
+            alert("First Name is Empty");
+        else if(lName === "")
+            alert("Last Name is Empty");
+        else if(email === "")
+            alert("Email is Empty");
+        else if(query === "")
+            alert("Your query is valuable");
+        else {
+            let str = `Full Name : ${fName} ${lName} \nEmail : ${email} \nQuery : ${query}`;
+            alert(str)
+        }
+
+}
+</script>
+</head>
+<body style="display: flex; justify-content: center;">
+    <header style="color: darkcyan;"><h1><u> Fill Form </u></h1></header>
+    <form style="padding: 25px; background-color: cyan; border: solid darkcyan 5px; margin-top: 130px;" action="">
+        <div class="form-group">
+          <!-- <label for="firstName">First Name : </label> -->
+          
+          <input type="text" class="form-control" id="fName" placeholder="First Name"><br>
+          <input type="text" class="form-control" id="lName" placeholder="Last Name">
+          <!-- <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small> -->
+        </div>
+        <div class="form-group">
+            <!-- <label for="exampleInputEmail1">Email address</label> -->
+            <input type="email" class="form-control" id="email" placeholder="Email id" >
+            <!-- <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small> -->
+          </div>
+        <div class="form-group">
+          <!-- <label for="exampleInputPassword1">Password</label> -->
+          <!-- <input type="password" class="form-control" id="exampleInputPassword1"> -->
+          <textarea name="" id="query" cols="30" rows="10" placeholder="Your Query"></textarea>
+        </div>
+        <button onclick="validateForm()" type="submit" style="margin-left: 77px;">Submit</button>   
+      </form>
+      
+
+</body>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+</html>
